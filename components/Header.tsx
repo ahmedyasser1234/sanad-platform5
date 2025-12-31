@@ -83,7 +83,8 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
                 className="h-full w-auto object-contain"
              />
           </div>
-          <div className="flex flex-col items-start">
+          {/* Hidden on mobile (hidden), displayed on medium screens and up (md:flex) */}
+          <div className="hidden md:flex flex-col items-start">
             <span className="text-xl font-black text-sanad-primary leading-none">{t.centerName}</span>
             <span className="text-xs text-sanad-primary font-bold mt-1">{t.tagline}</span>
           </div>

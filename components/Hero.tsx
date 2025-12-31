@@ -8,13 +8,13 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ lang }) => {
   const content = {
       ar: {
-          welcome: 'هلا وغلا معاك',
-          secondLine: 'سند.. إذا أردت التحدث لا تتردد',
+          welcome: 'هلا وغلا معاك سند',
+          secondLine: 'إذا أردت التحدث لا تتردد',
           title: 'مركز سند نموذجاً رائداً في رعاية وتمكين المستفيدين بالجامعة.',
       },
       en: {
           welcome: 'Hello & Welcome',
-          secondLine: 'Sanad.. Do not hesitate to chat',
+          secondLine: ' Do not hesitate to chat',
           title: 'Sanad Center is a pioneering model in caring for and empowering beneficiaries at the university.',
       }
   };

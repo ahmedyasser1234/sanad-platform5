@@ -53,12 +53,9 @@ const AboutSanad: React.FC<AboutSanadProps> = ({ lang }) => {
   const t = content[lang];
 
   return (
-    <section className="py-20 bg-transparent relative overflow-visible">
+    <section className="py-20 bg-transparent relative overflow-visible 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-[#bce6f9] via-[#e6f5fc] to-white`}">
       {/* Background Decor */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-30">
-        <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-sanad-secondary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-sanad-primary/10 rounded-full blur-3xl"></div>
-      </div>
+      
 
       {/* Floating Title - Overlapping Sections */}
       {/* Added top-12 on mobile to move it down as requested */}
@@ -68,7 +65,7 @@ const AboutSanad: React.FC<AboutSanadProps> = ({ lang }) => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 pt-8">
+      <div className="container mx-auto px-6 relative z-10 pt-8 ">
         
         {/* Header Section (Description Only) */}
         <div className="max-w-4xl mx-auto text-center mb-12">
@@ -140,3 +137,4 @@ const AboutSanad: React.FC<AboutSanadProps> = ({ lang }) => {
 };
 
 export default AboutSanad;
+

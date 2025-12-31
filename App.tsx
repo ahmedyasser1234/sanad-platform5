@@ -27,14 +27,14 @@ const App: React.FC = () => {
       <div className={`relative overflow-hidden transition-all duration-500 ${lang === 'en' ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-[#bce6f9] via-[#e6f5fc] to-white`}>
         <Header lang={lang} setLang={setLang} />
         <Hero lang={lang} />
-        <AboutSanad lang={lang} />
+        <Journeys lang={lang} />
       </div>
       
       <main className="flex-grow">
-        <VisionMission lang={lang} />
-        <Journeys lang={lang} />
-        <Services lang={lang} />
-        <SanadServices lang={lang} />
+      <Services lang={lang} />
+      <AboutSanad lang={lang} />
+      <VisionMission lang={lang} />
+      <SanadServices lang={lang} />
       </main>
       <ChatAssistant lang={lang} />
       <Footer lang={lang} />
